@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>About DUDE</title>
+
+    <style>
+        body {
+            margin: 0;
+            font-family: "Poppins", sans-serif;
+            background: linear-gradient(135deg, #0b3e60, #f6a4c8);
+            color: white;
+            text-align: center;
+            overflow-x: hidden;
+        }
+
+        /* Animations */
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to   { opacity: 1; transform: translateY(0); }
+        }
+
+        @keyframes slideUp {
+            from { opacity: 0; transform: translateY(40px); }
+            to   { opacity: 1; transform: translateY(0); }
+        }
+
+        @keyframes zoomIn {
+            from { opacity: 0; transform: scale(0.7); }
+            to   { opacity: 1; transform: scale(1); }
+        }
+
+        .fade-in { animation: fadeIn 1.2s ease forwards; }
+        .slide-up { animation: slideUp 1.2s ease forwards; }
+        .zoom-in { animation: zoomIn 1.2s ease forwards; }
+
+        header {
+            padding: 30px;
+        }
+
+        .logo {
+            width: 120px;
+            border-radius: 15px;
+        }
+
+        .section {
+            background: white;
+            color: #333;
+            width: 85%;
+            margin: 30px auto;
+            padding: 30px;
+            border-radius: 20px;
+            box-shadow: 0 0 20px #00000030;
+        }
+
+        .features-grid, .dev-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 20px;
+            margin-top: 20px;
+        }
+
+        .feature-card, .dev-card {
+            background: #ffe6f0;
+            padding: 20px;
+            border-radius: 15px;
+            box-shadow: 0 4px 10px #00000020;
+            transition: 0.3s;
+        }
+
+        .dev-card {
+            background: #e8f4ff;
+        }
+
+        .feature-card:hover, .dev-card:hover {
+            transform: translateY(-8px) scale(1.05);
+            box-shadow: 0 10px 25px #00000030;
+        }
+
+        .impact-list {
+            text-align: left;
+            width: 70%;
+            margin: 0 auto;
+        }
+
+        .impact-list li {
+            list-style: none;
+            background: #ffe6e6;
+            margin: 10px 0;
+            padding: 12px;
+            border-radius: 10px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header class="fade-in">
+        <img src="about-img.jpg" class="logo">
+        <h1>🌍 About DUDE</h1>
+        <p>Empowering Kids & Teens Through Safe Learning + AI Guidance</p>
+    </header>
+
+    <section class="section slide-up">
+        <h2>📘 What is DUDE?</h2>
+        <p>DUDE is an AI-enabled awareness & counseling platform designed for kids and teenagers.</p>
+    </section>
+
+    <section class="section slide-up">
+        <h2>✨ Key Features</h2>
+        <center>
+        <div class="features-grid">
+            <div class="feature-card">🎮 JoyJump Game</div>
+            <div class="feature-card">👧 Teen Girls Support</div>
+            <div class="feature-card">👦 Teen Boys Growth</div>
+            <div class="feature-card">🤖 Friend AI Counselor</div>
+        </div>
+        </center>
+    </section>
+
+    <section class="section slide-up">
+        <h2>🌟 Impact of DUDE</h2>
+
+        <ul class="impact-list">
+            <li>✔ Builds awareness about safety</li>
+            <li>✔ Improves emotional clarity</li>
+            <li>✔ Gamified learning makes concepts easy</li>
+            <li>✔ 24/7 AI support & guidance</li>
+        </ul>
+    </section>
+
+    <section class="section slide-up">
+        <h2>👨‍💻 Meet the Developers</h2>
+
+        <div class="dev-grid">
+            <div class="dev-card">
+                <h3>Kamalesh</h3>
+                <p>Wed Developer · UI/UX</p>
+            </div>
+
+            <div class="dev-card">
+                <h3>Priyaa Dharshini</h3>
+                <p>designed The UI & UX of each part of the Application</p>
+            </div>
+
+            <div class="dev-card">
+                <h3>Varsha</h3>
+                <p>Game Designer</p>
+            </div>
+        </div>
+    </section>
+
+</body>
+</html>
